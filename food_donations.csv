@@ -1,0 +1,12 @@
+Donation_ID	Donor	Food_Type	Quantity_kg	Status	City
+1	Rahim	Vegetables	20	Available	Dhaka
+2	Karim	Bread	10	Claimed	Dhaka
+3	Ayesha	Rice	35	Available	Gazipur
+4	Rahim	Rice	25	Claimed	Dhaka
+5	Nusrat	Vegetables	15	Available	Gazipur
+6	Karim	Bread	12	Available	Dhaka
+7	Ayesha	Fruits	18	Claimed	Narayanganj
+8	Nusrat	Rice	30	Available	Dhaka
+9	Rahim	Fruits	Missing	Available	Dhaka
+10	Karim	Vegetables	22	Claimed	Gazipur
+10	Karim	Vegetables	22	Claimed	Gazipur
