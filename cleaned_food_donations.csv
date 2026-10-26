@@ -1,0 +1,11 @@
+Donation_ID,Donor,Food_Type,Quantity_kg,Status,City,Quantity_Status
+3,Ayesha,Rice,35.0,Available,Gazipur,Large
+8,Nusrat,Rice,30.0,Available,Dhaka,Large
+4,Rahim,Rice,25.0,Claimed,Dhaka,Large
+10,Karim,Vegetables,22.0,Claimed,Gazipur,Small
+9,Rahim,Fruits,20.77777777777778,Available,Dhaka,Small
+1,Rahim,Vegetables,20.0,Available,Dhaka,Small
+7,Ayesha,Fruits,18.0,Claimed,Narayanganj,Small
+5,Nusrat,Vegetables,15.0,Available,Gazipur,Small
+6,Karim,Bread,12.0,Available,Dhaka,Small
+2,Karim,Bread,10.0,Claimed,Dhaka,Small
