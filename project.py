@@ -39,6 +39,13 @@ df["Quantity_kg"] = df["Quantity_kg"].fillna(mean_quantity)
 # print(df[["Quantity_kg","Donation_Value"]])
 # df = df.drop(columns=["Donation_Value"])
 # print(df.columns)
+#Sorting and Counting
+df = df.sort_values(by="Quantity_kg",ascending=False)
+print(df.head(5))
+print(df["Food_Type"].value_counts())
+print(df["Status"].value_counts())
+print(df["Donor"].nunique()) #finds the number of unique donors
+
 
 
 
