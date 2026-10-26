@@ -28,9 +28,17 @@ df["Quantity_kg"] = pd.to_numeric(df["Quantity_kg"])
 mean_quantity =  df["Quantity_kg"].mean()
 df["Quantity_kg"] = df["Quantity_kg"].fillna(mean_quantity)
 # print(df["Quantity_kg"])
-print(df.isnull().sum())
-df = df.reset_index(drop=True)
-print(df)
+# print(df.isnull().sum())
+# df = df.reset_index(drop=True)
+# print(df)
+#Creating and modifying Columns
+# df.loc[df["Quantity_kg"] >=25, "Quantity_Status"] = "Large"
+# df.loc[df["Quantity_kg"]<25, "Quantity_Status"] = "Small"
+# print(df[["Quantity_kg","Quantity_Status"]])
+# df["Donation_Value"] = df["Quantity_kg"] * 50
+# print(df[["Quantity_kg","Donation_Value"]])
+# df = df.drop(columns=["Donation_Value"])
+# print(df.columns)
 
 
 
