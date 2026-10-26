@@ -40,12 +40,30 @@ df["Quantity_kg"] = df["Quantity_kg"].fillna(mean_quantity)
 # df = df.drop(columns=["Donation_Value"])
 # print(df.columns)
 #Sorting and Counting
-df = df.sort_values(by="Quantity_kg",ascending=False)
-print(df.head(5))
-print(df["Food_Type"].value_counts())
-print(df["Status"].value_counts())
-print(df["Donor"].nunique()) #finds the number of unique donors
-
+# df = df.sort_values(by="Quantity_kg",ascending=False)
+# print(df.head(5))
+# print(df["Food_Type"].value_counts())
+# print(df["Status"].value_counts())
+# print(df["Donor"].nunique()) #finds the number of unique donors
+#Grouping and statistics
+print("total quantity of food donated")
+print(df["Quantity_kg"].sum())
+print("largest donation quantities")
+print(df["Quantity_kg"].max())
+print("Smallest donation quantities")
+print(df["Quantity_kg"].min())
+print("Total Quantity donated by each donor")
+print(df.groupby("Donor")["Quantity_kg"].sum())
+print("Total Quantity for each food type")
+print(df.groupby("Food_Type")["Quantity_kg"].sum())
+print("Number of donations in each city")
+print(df.groupby("City")["Donation_ID"].count())
+print("total quantity of food currently available")
+available = df[df["Status"] == "Available"]
+print(available["Quantity_kg"].sum())
+print("total quantity of food claimed")
+available = df[df["Status"] == "Claimed"]
+print(available["Quantity_kg"].sum())
 
 
 
